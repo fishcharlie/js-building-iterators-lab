@@ -4,6 +4,14 @@ function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
 
+	var newArr = [];
+
+	for (var i = 0; i < arr.length; i++) {
+		newArr.push(callback(arr[i],i,arr));
+	}
+	
+	return newArr;
+
 }
 
 /*
